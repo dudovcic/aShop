@@ -7,20 +7,23 @@ body {
 	margin: 0 auto;
 }
 #navbar {
+	position: fixed;
+	top: 0;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: 50px;
 	background-color: #3e474f;
 	color: #b2bbbd;
+	opacity: 0.91;
 	font-family: 'peacesans', sans-serif;
-	height: 70px;
 	border-radius: 0 0 30px 30px;
 }
 #navbar div {
 	position: absolute;
 	top: 0;
 	display: inline-block;
-	padding: 22px;
+	padding: 13px;
 }
 #navbar-2 {
 	right: 75px;
@@ -42,16 +45,31 @@ body {
 }
 
 #services {
-	display: inline;
-	height: 300px;
+	display: block;
+	background-color: red;
 	box-sizing: border-box;
 }
-.service-item {
-	width: 250px;
-	height: 250px;
-	background-color: red;
+.service-item-box {
+	width: 200px;
+	height: 200px;
+	/*background-color: red;*/
 	display: inline;
 	float: left;
-	width: 33.3%;
-	margin-bottom: 40px;
+	width: 24%;
+	margin: 20px;
+}
+.service-item {
+	width: 100%;
+	height: 100%;
+	background-color: green;
+	border-radius: 80px;
+	text-align: center;
+}
+.item-name {
+	font-family: "peacesans";
+	padding: 10px;
+}
+
+#services {
+	background-color: red;
 }

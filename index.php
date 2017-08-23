@@ -23,7 +23,7 @@
 			?>
 				<div class="service-item-box">
 					<div class="service-item">
-						<h3>Item <?php= $i ?></h3>
+						<h3 class="item-name">Item <?php echo $i; ?></h3>
 					</div>
 				</div>
 
