@@ -14,10 +14,12 @@ body {
 	width: 100%;
 	height: 50px;
 	background-color: #3e474f;
-	color: #b2bbbd;
-	opacity: 0.91;
+	color:#ddd;/*#b2bbbd;*/
+	opacity: 0.95;
 	font-family: 'peacesans', sans-serif;
-	border-radius: 0 0 30px 30px;
+	/*border-radius: 0 0 30px 30px;*/
+	border-bottom: 2px solid #911;
+	border-bottom-color: red 0.6;
 }
 #navbar div {
 	position: absolute;
@@ -29,9 +31,9 @@ body {
 	right: 75px;
 }
 #navbar a {
-	font-size: 20px;
+	font-size: 23px;
 	height: 10px;
-	font-weight: bold;
+	font-weight: lighter;
 	transition: color 0.5s;
 	padding: 10px;
 }
@@ -44,26 +46,32 @@ body {
 	cursor: pointer;
 }
 
-#services {
+#container-main {
 	display: block;
-	background-color: red;
+	margin-top: 100px;
+/*	background-color: red;*/
+}
+
+#services {
+	display: inline;
+/*	background-color: red;*/
 	box-sizing: border-box;
 }
 .service-item-box {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	/*background-color: red;*/
-	display: inline;
+	display: inline-block;
 	float: left;
-	width: 24%;
-	margin: 20px;
+	margin: 10px;
 }
 .service-item {
-	width: 100%;
+	width: 300px;
 	height: 100%;
-	background-color: green;
-	border-radius: 80px;
+	background-color: white;
+	border-radius: 30px;
 	text-align: center;
+	border: 1px solid red;
 }
 .item-name {
 	font-family: "peacesans";
@@ -71,5 +79,36 @@ body {
 }
 
 #services {
-	background-color: red;
+	/*background-color: red;*/
+}
+
+#sandm {
+	height: 100%;
+	display: inline-block;
+}
+
+#menu {
+	width: 18%;
+	height: 1500px;
+	/*background-color: green;*/
+	display: inline-block;
+	float: left;
+	border-right: 1px solid red;
+	border-top: 1px solid red;
+	border-radius: 0 23px;
+	margin-right: 20px;
+}
+
+.service-item {
+	background-image: url("../img/lol-logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.price {
+	margin-top: 200px;
+}
+
+a {
+	cursor: pointer;
 }
