@@ -15,6 +15,8 @@
 			<a class="navbar-items">About</a>
 		</div>
 	</nav>
+	<div id="background">
+	</div>
 	<div id="container-main">
 
 <div id="sandm">
