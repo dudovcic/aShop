@@ -1,0 +1,23 @@
+{
+  "name": "ashop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudovcic/aShop.git"
+  },
+  "author": "Dominik, Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudovcic/aShop/issues"
+  },
+  "homepage": "https://github.com/dudovcic/aShop#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}
