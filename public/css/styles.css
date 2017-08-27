@@ -1,7 +1,7 @@
 @font-face{
-    font-family: 'peacesans';
-    src: url('peacesans.ttf'),
-    url('./public/fonts/peacesans.ttf'); /* IE */
+    font-family: 'baloo';
+    src: url('../fonts/baloo.ttf'),
+    url('../fonts/baloo.ttf'); /* IE */
 }
 body {
 	margin: 0 auto;
@@ -17,7 +17,7 @@ body {
 	background-color: #3e474f;
 	color:#ddd;
 	opacity: 0.95;
-	font-family: 'peacesans', sans-serif;
+	font-family: 'baloo', sans-serif;
 	border-bottom: 4px solid #911;
 	border-bottom-color: red 0.6;
 }
@@ -25,22 +25,23 @@ body {
 	position: absolute;
 	top: 0;
 	display: inline-block;
-	padding: 13px;
+	padding: 7px;
 }
 #navbar-2 {
-	right: 75px;
+	right: 60px;
+	bottom: 20px;
 }
 #navbar a {
 	font-size: 23px;
 	height: 10px;
-	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
-	color: #5fcf80;
+	text-shadow: -1px 0;
 	transition: color 0.5s;
 	padding: 10px;
 }
 #navbar-title a {
 	color: #5fcf80;
 	font-size: 25px;
+/*	margin-bottom: 20px;*/
 }
 #navbar a:hover {
 	color: white;
@@ -75,7 +76,7 @@ body {
 	border: 1px solid red;
 }
 .item-name {
-	font-family: "peacesans";
+	font-family: "baloo";
 	padding: 10px;
 }
 
@@ -91,12 +92,11 @@ body {
 #menu {
 	width: 18%;
 	height: 1500px;
-	/*background-color: green;*/
 	display: inline-block;
 	float: left;
-	border-right: 1px solid red;
-	border-top: 1px solid red;
-	border-radius: 0 23px;
+	border-right: 4px solid #f13;
+	/*border-top: 1px solid red;*/
+	/*border-radius: 0 23px;*/
 	margin-right: 20px;
 }
 
@@ -105,14 +105,24 @@ body {
 	background-repeat: no-repeat;
 	opacity: 0.6;
 	background-position: center;
-	transition: opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, background-color 0.6s;
+	background-size: 200px 120px;
+	transform: rotate(0.5deg);
+	box-shadow: 7px 7px #f13;
 }
 .service-item:hover {
 	opacity: 1;
+	transform: rotate(-0.1deg) scale(1.15);
+	position: relative;
+	z-index: 1;
+	height: 500px 400px;
+	background-color: #3e474f;
+	color: #f03;
+	box-shadow: 0px 0px;
 }
 
 .price {
-	margin-top: 200px;
+	margin-top: 180px;
 }
 
 a {
@@ -121,6 +131,33 @@ a {
 
 #background {
 	width: 100%;
-	height: 880px;
+	height: 600px;
 	background-image: url("../img/thumb-1920-600528.png");
+}
+
+
+
+
+
+
+
+@media screen and (max-device-width: 480px) {
+	#service-item, #service-item-box {
+		display: block;
+	}
+	#navbar-title, #navbar-2 {
+		display: inline-block;
+		position: relative;
+		margin: 0 auto;
+		padding: 0 auto;
+	}
+	#navbar-2 {
+		margin-left: 120px;
+	}
+	#navbar {
+		height: 100px;
+		margin: auto;
+		padding: auto;
+		box-sizing: border-box;
+	}
 }

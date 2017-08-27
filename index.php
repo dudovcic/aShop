@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>aShop by iVictorious</title>
 </head>
@@ -21,7 +22,7 @@
 
 <div id="sandm">
 <div id="menu">
-	<h3>some text</h3>
+	<h3>some tasdwawsawext</h3>
 </div>
 		<div id="services">
 			<?php
